@@ -33,8 +33,7 @@ Puisque `jupyter/pyspark-notebook` ne contient pas tout nos outils, nous allons 
    USER root
 
    # Installer des outils système
-   RUN apt-get update && apt-get install -y net-tools curl git 
-   #postgresql postgresql-contrib
+   RUN apt-get update && apt-get install -y net-tools curl git
 
    # Ajouter des connecteurs JDBC
    RUN curl -o /usr/local/spark/jars/postgresql-42.6.0.jar https://jdbc.postgresql.org/download/postgresql-42.6.0.jar && \
@@ -46,16 +45,8 @@ Puisque `jupyter/pyspark-notebook` ne contient pas tout nos outils, nous allons 
 
    # Installer des bibliothèques Python
    RUN pip install --no-cache-dir \
-      psycopg2-binary kafka-python redis \
-      tensorflow torch transformers \
+      psycopg2-binary kafka-python r\
       plotly dash ipython ipdb
-
-   # Configurer PostgreSQL pour démarrer sans mot de passe
-   # RUN sed -i "s/#listen_addresses = 'localhost'/listen_addresses = '*'/g" /etc/postgresql/*/main/postgresql.conf && \
-     # echo "host all all all trust" >> /etc/postgresql/*/main/pg_hba.conf
-
-   # Créer le répertoire de données PostgreSQL
-   # RUN mkdir -p /var/lib/postgresql/data && chown -R postgres:postgres /var/lib/postgresql
 
    # Changer l’utilisateur par défaut pour Jupyter Notebook
    USER $NB_USER
