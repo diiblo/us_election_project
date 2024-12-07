@@ -1,6 +1,6 @@
 # Projet Big Data : Analyse des Élections Américaines 2024 avec Spark et PostgreSQL
 
-Ce projet analyse les données des élections américaines de 2024 en utilisant une architecture Big Data basée sur Spark, PostgreSQL, et Jupyter Notebook. Le traitement distribué s'appuie sur un cluster Spark configuré avec Docker, tandis que PostgreSQL sert au stockage structuré des résultats.
+Ce projet analyse les données des [élections américaines de 2024](https://github.com/dBangos/US-Election-Results-2024). en utilisant une architecture Big Data basée sur Spark, PostgreSQL, et Jupyter Notebook. Le traitement distribué s'appuie sur un cluster Spark configuré avec Docker, tandis que PostgreSQL sert au stockage structuré des résultats.
 
 ---
 
@@ -83,7 +83,7 @@ Les données enrichies sont visualisées dans Power BI en se connectant à Postg
 
 1. **Dockerfile** : Image Docker personnalisée avec Spark et PostgreSQL.
 2. **Scripts PySpark** : Analyses distribuées des données électorales.
-3. **Données CSV** : Résultats des élections américaines 2024.
+3. **Données CSV** : [Résultats des élections américaines 2024](https://github.com/dBangos/US-Election-Results-2024).
 4. **README.md** : Documentation complète.
 
 ---
