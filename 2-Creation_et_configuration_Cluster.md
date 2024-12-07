@@ -1,4 +1,4 @@
-# Configuration d'un Cluster
+# Création et configuration d'un Cluster
 
 ---
 

@@ -1,4 +1,4 @@
-# Acquisition : Charger le fichier CSV dans PostgreSQL
+# Création de la base de donnée : Charger le fichier CSV dans PostgreSQL
 
 ---
 
