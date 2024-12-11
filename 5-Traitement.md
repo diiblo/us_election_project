@@ -36,7 +36,7 @@ df_election = spark.read \
     .option("password", "postgres") \
     .load()
 
-df_electionf_spark.show()  # Vérifier que les données sont bien chargées
+df_electionf.show()  # Vérifier que les données sont bien chargées
 ```
 ---
 
