@@ -48,7 +48,7 @@ CREATE DATABASE us_election_db;
 ```sql
 -- Créer une table
 CREATE TABLE election_data (
-    id INT,
+    id SERIAL PRIMARY KEY,
     State VARCHAR(255),
     County VARCHAR(255),
     Trump REAL,
