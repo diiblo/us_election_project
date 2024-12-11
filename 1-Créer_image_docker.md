@@ -22,7 +22,8 @@ Les images **Jupyter Docker Stacks** incluent différentes configurations. L'ima
 ### Étape 2 : Ajouter PostgreSQL à l'image
 Puisque `jupyter/pyspark-notebook` ne contient pas tout nos outils, nous allons les ajouters, par un `Dockerfile`.
 
-**NB :** Certains, ne sont pas importants, mais peuvent servir pour d'autres projets
+**NB :** Certains, ne sont pas importants, mais peuvent servir pour d'autres projets.
+Un Dockerfile est déjà fournit dans mon dépôt [us_election_project](https://github.com/diiblo/us_election_project/blob/main/Dockerfile)
 
 1. **Créer un Dockerfile personnalisé :**
    Dans répertoire de votre choix, créez un fichier appelé `Dockerfile` (sans extension) et ajoutez les lignes suivantes :
