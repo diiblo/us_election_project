@@ -12,7 +12,7 @@ docker run -itd --net=pyspark-cluster -p 5432:5432 --name pg-ds-dellstore aa8y/p
 **NB :** si le port est déjà utilisé, cf : [PB_port_utilise.md](./PB_port_utilise.md)
 
 
-#### Étape 2 : Télécharger le repo de dBangos
+#### Étape 2 : Télécharger le repo de [dBangos](https://github.com/dBangos/US-Election-Results-2024)
 Ouvrir votre interpreteur de commande et entrez :
 ```bash
 git clone https://github.com/dBangos/US-Election-Results-2024
@@ -48,7 +48,7 @@ CREATE DATABASE us_election_db;
 ```sql
 -- Créer une table
 CREATE TABLE election_data (
-    id INT,
+    id SERIAL PRIMARY KEY,
     State VARCHAR(255),
     County VARCHAR(255),
     Trump REAL,
