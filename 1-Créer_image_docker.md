@@ -19,7 +19,7 @@ Les images **Jupyter Docker Stacks** incluent différentes configurations. L'ima
    ```
    Vous devriez voir `jupyter/pyspark-notebook` dans la liste.
 
-### Étape 2 : Ajouter PostgreSQL à l'image
+### Étape 2 : Ajouter des plugins ou outils à l'image
 Puisque `jupyter/pyspark-notebook` ne contient pas tout nos outils, nous allons les ajouters, par un `Dockerfile`.
 
 **NB :** Certains, ne sont pas importants, mais peuvent servir pour d'autres projets.
@@ -45,9 +45,9 @@ Un Dockerfile est déjà fournit dans mon dépôt [us_election_project](https://
 
 
    # Installer des bibliothèques Python
-   RUN pip install --no-cache-dir \
-      psycopg2-binary kafka-python r\
-      plotly dash ipython ipdb
+   #RUN pip install --no-cache-dir \
+   #   psycopg2-binary kafka-python r\
+   #   plotly dash ipython ipdb
 
    # Changer l’utilisateur par défaut pour Jupyter Notebook
    USER $NB_USER
